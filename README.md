@@ -1,0 +1,2 @@
+# Product-Catalogue
+This Page is Designed for a  seller who is adding product in it and just disply it by clicking one button.The Project is landing in the 'add-product' where he/she can add different products details with their respective images. After that cicking on submit button, the page navigates to 'displayProduct' page where he can able to all the product's detalil with image.The whole project is made using  Angular7, in order to make it a single page application.
