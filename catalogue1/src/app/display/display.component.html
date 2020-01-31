@@ -1,0 +1,22 @@
+<div class="mainWrapper">
+<div *ngFor="let item of divArray; let i = index">
+<div class="galary1" >
+    
+    <div class="img1" >
+        <img src="{{arrayRes1[i*6+5]}}"   alt="P Image"  name="photo"  width="260" height="100%">
+        
+      </div>
+    <div class="content1">
+      <label class="proName"><b>{{arrayRes1[i*6+0]}}</b></label>
+      <br><button type="button" class="btn btn-info revi">4.2*</button>
+      <p class='review'>533 Ratings & 12 Reviews</p>
+    <ul>
+      <li class="input2"><b>₹</b>{{arrayRes1[i*6+1]}}.00/-</li>
+      <li class="input2">-Model No.{{arrayRes1[i*6+2]}}</li>
+      <li class="input2">Generic Name-{{arrayRes1[i*6+3]}}</li>
+      <li class="input2">Imported from{{arrayRes1[i*6+4]}}</li>
+    </ul>
+    </div>
+  </div>
+</div>
+</div>

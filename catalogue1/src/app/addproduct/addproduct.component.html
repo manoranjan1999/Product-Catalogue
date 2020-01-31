@@ -1,0 +1,50 @@
+
+   
+<div class="container">
+    <form   [formGroup]='addProduct'  >
+      <div class="row form-group">      
+        <div class="col-md">
+           <label >Product Name <sup>*</sup> </label><br> <input type="text" id="name1" formControlName="name1"  class="form-control" placeholder="Enter Product Name" autocomplete="off">
+        </div>
+          <div class="col-md">
+           <label >Product Price <sup>*</sup> </label><br><input type="number" id="price1" formControlName="price1"  class="form-control" placeholder="Enter Price" min="1" autocomplete="off" >
+          </div>
+      </div>
+      <div class="row form-group">
+        <div class="col-md">
+          
+          <label >Model Number <sup>*</sup></label><br><input type="text"  id="model1" formControlName="model1"  class="form-control" placeholder="Enter Model Number" autocomplete="off" >          
+          </div>
+          <div class="col-md">
+            <label>Generic Name <sup>*</sup></label><br><input type="text" id="generic1" formControlName="generic1"  class="form-control" placeholder="Enter Generic Name" autocomplete="off" >
+          </div>
+        
+      </div>
+
+      <div class="row form-group">
+        <div class="col-md">
+          
+          <label id="txtName">Country of Origin <sup>*</sup></label>
+          <select id="country1" formControlName="cname1"  class="form-control"  placeholder="Enter country" >   
+            <option value=" India">India</option>
+            <option value=" USA">USA</option>
+            <option value=" Australia">Australia</option>
+            <option value=" New zealand">New zealand</option>
+            <option value=" Sweden">Sweden</option>
+            <option value=" Russia">Russia</option>
+          </select><br>
+          <input #file type="file" accept='image/*'  (change)="preview(file.files); " >
+          
+          </div>
+        <div class="col-md">
+          
+          <img [src]="imgURL" class="img-thumbnail" height="200" width="200" *ngIf="imgURL"/>
+         
+        </div>  
+        </div>
+   
+    <a routerLink="/displayProduct" routerLinkActive="active"><button  type="button"  value="submit"  class="btn btn-primary btn-lg btn1" (click)="sendData();">Submit</button></a>
+     
+  </form>
+</div>
+ 
